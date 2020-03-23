@@ -115,10 +115,6 @@
   });
   wow.init();
 
-  // AOS
-
-  //AOS.init();
-
   //NAV FIXED ON SCROLL
   $(window).on("scroll", function() {
     var scroll = $(window).scrollTop();
@@ -129,23 +125,13 @@
     }
   });
 
-  //Progress bar
-
-  $(".determinate").each(function() {
-    var width = $(this).text();
-    $(this)
-      .css("width", width)
-      .empty()
-      .append('<i class="fa fa-circle"></i>');
-  });
-
   //Portfolio mixin
 
   $("#portfolio-item").mixItUp();
 
   // Client review
 
-  $("#mh-client-review").owlCarousel({
+  $("#rt-client-review").owlCarousel({
     loop: false,
     responsiveClass: true,
     nav: true,
@@ -164,33 +150,6 @@
       },
       1170: {
         items: 3
-      }
-    }
-  });
-
-  // Project review slide
-
-  $(".mh-project-testimonial").owlCarousel({
-    loop: true,
-    responsiveClass: true,
-    nav: false,
-    dots: false,
-    autoplay: true,
-    smartSpeed: 450,
-    stopOnHover: true,
-    animateIn: "slideInRight",
-    animateOut: "slideOutLeft",
-    autoplayHoverPause: true,
-    pagination: false,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 1
-      },
-      1170: {
-        items: 1
       }
     }
   });
@@ -226,7 +185,7 @@
     |================
     */
 
-  $(".mh-single-project-slide-by-side").owlCarousel({
+  $(".rt-single-project-slide-by-side").owlCarousel({
     loop: false,
     responsiveClass: true,
     nav: true,
@@ -251,64 +210,6 @@
       },
       1170: {
         items: 1
-      }
-    }
-  });
-
-  /*
-    |=================
-    | Single client review
-    |================
-    */
-
-  $("#mh-single-client-review").owlCarousel({
-    loop: false,
-    responsiveClass: true,
-    nav: true,
-    autoplay: false,
-    smartSpeed: 450,
-    stopOnHover: true,
-    animateIn: "slideInRight",
-    animateOut: "slideOutLeft",
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 1
-      },
-      1170: {
-        items: 1
-      }
-    }
-  });
-
-  /*
-    |=================
-    | Clint review slide
-    |================
-    */
-
-  $("#mh-2-client-review").owlCarousel({
-    loop: false,
-    responsiveClass: true,
-    nav: true,
-    autoplay: false,
-    smartSpeed: 450,
-    stopOnHover: true,
-    animateIn: "slideInRight",
-    animateOut: "slideOutLeft",
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 2
-      },
-      1170: {
-        items: 2
       }
     }
   });
