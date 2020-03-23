@@ -41,6 +41,7 @@
 html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -551,36 +552,6 @@ ul li,
   box-shadow: -1rem 0 3rem #000;
 }
 
-.candidatos .parcial .progressBar {
-  background: rgba(199, 198, 198, 0.6);
-}
-body.home-slider .home .img-border {
-  border-color: rgba(255, 255, 255, 0.52);
-}
-
-body.home-slider .home .hero-img img {
-  border-color: rgba(255, 255, 255, 0.4);
-}
-
-.home-slider .home .img-border {
-  border: 20px solid rgba(0, 0, 0, 0.52);
-}
-
-.home-slider .img-color-overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 9;
-  position: relative;
-}
-
-.home-video .home .img-border {
-  border: 20px solid rgba(0, 0, 0, 0.52);
-}
-
-/*
-    ==============
-    Navigation
-    ==============
-*/
 /*---------------------------------------------------------------------*/
 /* Loader 
 /*---------------------------------------------------------------------*/
@@ -733,7 +704,34 @@ body.home-slider .home .hero-img img {
   transform: translate(-50%, -50%);
   width: 70%;
 }
-
+.scroll-down {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.scroll-down a {
+  font-size: 30px !important;
+  border-radius: 50%;
+  background-color: #0bceaf;
+  padding: 5px 14px;
+  animation-duration: 0.9s;
+  animation-name: scrolldownmove;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes scrolldownmove {
+  0% {
+    background-color: #0bceaf;
+  }
+  100% {
+    background-color: #0b7e6b;
+  }
+}
+.scroll-down a:hover {
+  background-color: #ffffff;
+}
 /*
     ==============
        ABOUT
@@ -946,14 +944,11 @@ body.home-slider .home .hero-img img {
   background-color: #0bceaf;
   color: white;
 }
-.fa {
-  color: white !important;
-  transition: 0.25s ease-in all;
-}
 .social-icon .fa {
   border: 1px solid transparent;
   padding: 10px;
   border-radius: 50%;
+  transition: 0.25s ease-in all;
 }
 
 .social-icon .fa:hover {
