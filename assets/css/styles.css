@@ -98,15 +98,13 @@ a {
   padding: 0px;
   background-color: transparent;
   -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
   color: #000;
   opacity: 0.9;
 }
-
 a:hover {
-  background-color: transparent;
+  color: #0cba9f;
 }
-
 a:focus {
   background-color: transparent;
   outline: 0 !important;
@@ -208,6 +206,11 @@ a:focus {
 
 .btn.btn-fill {
   background-color: #0bceaf;
+  color: #fff;
+  transition: 0.25s all ease-in;
+}
+.btn.btn-fill:hover {
+  background-color: #045749;
   color: #fff;
 }
 
@@ -417,10 +420,12 @@ button:focus {
   margin: 0;
   margin-top: 30px !important;
 }
-
 .team p {
   margin: 0;
   color: #0bceaf;
+}
+.team a {
+  margin-top: 6px;
 }
 @media (max-width: 900px) {
   .team .col-md-3 {
@@ -442,6 +447,11 @@ button:focus {
 ::-ms-input-placeholder,
 ::placeholder {
   color: #fff;
+}
+input:active,
+input:focus,
+input {
+  color: #ffffff !important;
 }
 
 a,
@@ -465,9 +475,10 @@ ul li,
 }
 
 .rt-header .navbar-nav li.active a {
-  border-color: #fff;
-  padding-right: 0;
-  padding-left: 0;
+  border-color: #0daa93;
+  color: #0daa93;
+  padding-right: 30px !important;
+  padding-left: 30px !important;
 }
 
 .rt-header.nav-3 .navbar-nav li.active a {
@@ -689,7 +700,6 @@ body.home-slider .home .hero-img img {
   opacity: 1;
   line-height: 30px;
 }
-
 .rt-header .navbar-nav li a.nav-link {
   padding-left: 0;
   padding-right: 0;
@@ -824,7 +834,7 @@ body.home-slider .home .hero-img img {
       FOOTER ONE
     ==============
 */
-.contact ::-webkit-input-placeholder {
+/* .contact ::-webkit-input-placeholder {
   opacity: 0.9;
 }
 .contact :-ms-input-placeholder {
@@ -835,7 +845,7 @@ body.home-slider .home .hero-img img {
 }
 .contact ::placeholder {
   opacity: 0.9;
-}
+} */
 
 .contact .form-control {
   padding: 20px;
@@ -927,6 +937,30 @@ body.home-slider .home .hero-img img {
   line-height: 100px;
   font-size: 20px;
   border-color: #0bceaf;
+  transition: 0.25s ease-in;
+}
+.contact-address .rt-address-footer-item .each-icon .a {
+  color: white !important;
+}
+.contact-address .rt-address-footer-item .each-icon .fa:hover {
+  background-color: #0bceaf;
+  color: white;
+}
+.fa {
+  color: white !important;
+  transition: 0.25s ease-in all;
+}
+.social-icon .fa {
+  border: 1px solid transparent;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.social-icon .fa:hover {
+  color: #0bceaf !important;
+  border: 1px solid #0bceaf;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 /*
@@ -1194,7 +1228,7 @@ body.home-slider .home .hero-img img {
   opacity: 1;
 }
 
-.4 .grid-item figure:hover figcaption .sub-title {
+.grid-item figure:hover figcaption .sub-title {
   transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
   -o-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg)
     scale(1);
@@ -1254,7 +1288,9 @@ body.home-slider .home .hero-img img {
   margin-left: 6px;
 }
 
-/* Responsive */
+/**********************************************************************************************************
+                                             Responsive 
+**********************************************************************************************************/
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1281,10 +1317,6 @@ body.home-slider .home .hero-img img {
   }
   .rt-xs-mobile-nav {
     z-index: 99;
-    /*-------------------------------*/
-    /*            Overlay            */
-    /*-------------------------------*/
-    /*  Navigation Menu */
   }
   .rt-xs-mobile-nav .nav-btn .navbar-toggler.active {
     display: none;
@@ -1526,11 +1558,15 @@ body.home-slider .home .hero-img img {
     color: white !important;
     background: transparent;
   }
-  .rt-xs-mobile-nav .navbar-collapse .nav li a.active {
-    color: #fff;
+  .rt-xs-mobile-nav .navbar-collapse .nav li a.active,
+  .rt-xs-mobile-nav .navbar-collapse .nav li a:hover {
+    color: #fff !important;
+  }
+  .rt-header .navbar-nav li a:hover {
+    color: #000000;
   }
   .rt-xs-mobile-nav .navbar-collapse .nav li.active {
-    color: #fff;
+    color: #fff !important;
   }
   .rt-xs-mobile-nav .navbar-collapse.active {
     transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
