@@ -62,7 +62,7 @@
 
   // Animations
   var wow = new WOW({
-    mobile: false
+    mobile: true
   });
   wow.init();
 
@@ -75,7 +75,6 @@
       $(".nav-scroll").removeClass("nav-strict");
     }
   });
-
   //Portfolio mixin
 
   $("#portfolio-item").mixItUp();
