@@ -757,8 +757,8 @@ ul li,
   left: 10%;
 }
 .abstact img:nth-child(3) {
-  top: 34%;
-  left: 43%;
+  top: 20%;
+  left: 12%;
 }
 .abstact img:nth-child(4) {
   top: 20%;
@@ -820,6 +820,10 @@ ul li,
   .abstact img:nth-child(1) {
     top: 80%;
     left: 80%;
+  }
+  .abstact img:nth-child(3) {
+    top: 35%;
+    left: 15%;
   }
   .abstact img:nth-child(9) {
     top: 65%;
@@ -1166,37 +1170,25 @@ ul li,
        SERVICES
     ==============
 */
-.services .services-item {
+.services .service-item {
   margin: 10px 0px;
   padding: 20px;
   border-radius: 4px;
 }
 
-.services .services-item .fa {
+.services .service-item .fa {
   font-size: 30px;
   margin-bottom: 20px;
   margin-top: 16px;
 }
 
-.services .services-item .fa.purple-color {
-  color: #9774fa;
-}
-
-.services .services-item .fa.iron-color {
-  color: #ed7256;
-}
-
-.services .services-item .fa.sky-color {
-  color: #2796e2;
-}
-
-.services .services-item h3 {
+.services .service-item h3 {
   margin-bottom: 18px;
-  font-size: 25px;
+  font-size: 16px;
   line-height: 34px;
 }
 
-.services .services-item a {
+.services .service-item a {
   color: #0bceaf;
 }
 
