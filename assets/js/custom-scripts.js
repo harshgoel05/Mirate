@@ -181,7 +181,7 @@
             {
               scrollTop: target.offset().top
             },
-            600
+            300
           );
           return false;
         }
